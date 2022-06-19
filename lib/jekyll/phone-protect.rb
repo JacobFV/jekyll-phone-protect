@@ -1,9 +1,9 @@
 module Jekyll
-  module EmailProtect
-    module EmailProtectionFilter
+  module PhoneProtect
+    module PhoneProtectionFilter
 
-      # Percent-encode alphanumeric characters of an email address
-      def encode_email(input)
+      # Percent-encode alphanumeric characters of an phone address
+      def encode_phone(input)
         input.to_s.chars.inject(String.new) do |result, char|
           if char =~ /\p{Alnum}/
             char.bytes.inject(result) do |result, byte|
@@ -18,4 +18,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::EmailProtect::EmailProtectionFilter)
+Liquid::Template.register_filter(Jekyll::PhoneProtect::PhoneProtectionFilter)

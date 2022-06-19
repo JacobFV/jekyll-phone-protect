@@ -1,7 +1,7 @@
 TEST_DIR = File.dirname(__FILE__)
 
 require 'liquid'
-require File.expand_path("../lib/jekyll-email-protect.rb", TEST_DIR)
+require File.expand_path("../lib/jekyll-phone-protect.rb", TEST_DIR)
 
 RSpec.configure do |config|
   config.run_all_when_everything_filtered = true

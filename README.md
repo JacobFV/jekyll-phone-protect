@@ -1,8 +1,8 @@
-# Jekyll Email Protect [![Gem Version](https://badge.fury.io/rb/jekyll-email-protect.png)](http://badge.fury.io/rb/jekyll-email-protect)
+# Jekyll Phone Protect [![Gem Version](https://badge.fury.io/rb/jekyll-phone-protect.png)](http://badge.fury.io/rb/jekyll-phone-protect)
 
-> Email protection liquid filter for Jekyll
+> Phone protection liquid filter for Jekyll
 
-Jekyll Email Protect is an email protection liquid filter which can be used to obfuscate `mailto:` links to protect an email address from spam bots.
+Jekyll Phone Protect is an phone protection liquid filter which can be used to obfuscate `mailto:` links to protect an phone address from spam bots.
 
 ## Installation
 
@@ -11,7 +11,7 @@ This plugin is available as a [RubyGem][ruby-gem].
 Add this line to your application's `Gemfile`:
 
 ```
-gem 'jekyll-email-protect'
+gem 'jekyll-phone-protect'
 ```
 
 And then execute the `bundle` command to install the gem.
@@ -19,32 +19,32 @@ And then execute the `bundle` command to install the gem.
 Alternatively, you can also manually install the gem using the following command:
 
 ```
-$ gem install jekyll-email-protect
+$ gem install jekyll-phone-protect
 ```
 
 After the plugin has been installed successfully, add the following lines to your `_config.yml` in order to tell Jekyll to use the plugin:
 
 ```
 gems:
-- jekyll-email-protect
+- jekyll-phone-protect
 ```
 
 ## Getting Started
 
-In your markup, simply use the `encode_email` liquid filter made available through this plugin:
+In your markup, simply use the `encode_phone` liquid filter made available through this plugin:
 
 ```
-{{ 'example@example.com' | encode_email }}
+{{ '+1-123-456-7890' | encode_phone }}
 ```
 
 The above code will yield `%65%78%61%6D%70%6C%65@%65%78%61%6D%70%6C%65.%63%6F%6D`. Only use this filter within the `href` attribute of a given link.
 
 ## Example
 
-The following example shows how this plugin can be used to protect the `site`'s email address:
+The following example shows how this plugin can be used to protect the `site`'s phone address:
 
 ```
-<a href="mailto:{{ site.email | encode_email }}" title="Contact me">Contact me</a>
+<a href="mailto:{{ site.phone | encode_phone }}" title="Contact me">Contact me</a>
 ```
 
 # Contribute
@@ -53,8 +53,8 @@ Fork this repository, make your changes and then issue a pull request. If you fi
 
 # Copyright
 
-Copyright (c) 2015 Vincent Wochnik.
+Copyright (c) 2015 Vincent Wochnik and Jacob Valdez.
 
 License: MIT
 
-[ruby-gem]: https://rubygems.org/gems/jekyll-email-protect
+[ruby-gem]: https://rubygems.org/gems/jekyll-phone-protect
