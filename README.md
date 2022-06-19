@@ -4,7 +4,7 @@
 
 Jekyll Phone Protect is an phone protection liquid filter which can be used to obfuscate `mailto:` links to protect an phone address from spam bots.
 
-:info: See the original Jekyll Email Protect [here](https://github.com/vwochnik/jekyll-email-protect).
+ℹ️ See the original Jekyll Email Protect [here](https://github.com/vwochnik/jekyll-email-protect).
 
 ## Installation
 
