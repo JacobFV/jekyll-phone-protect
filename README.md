@@ -39,7 +39,7 @@ In your markup, simply use the `encode_phone` liquid filter made available throu
 {{ '+1-123-456-7890' | encode_phone }}
 ```
 
-The above code will yield `%65%78%61%6D%70%6C%65@%65%78%61%6D%70%6C%65.%63%6F%6D`. Only use this filter within the `href` attribute of a given link.
+The above code will yield `+%31-%31%32%33-%34%35%36-%37%38%39%30`. Only use this filter within the `href` attribute of a given link.
 
 ## Example
 

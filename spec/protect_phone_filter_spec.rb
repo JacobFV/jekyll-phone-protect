@@ -10,7 +10,7 @@ describe(Jekyll::PhoneProtect::PhoneProtectionFilter) do
     let(:content)  { "{{ '#{phone}' | encode_phone }}" }
 
     it "produces the correct percent-encoded phone number" do
-      expect(output).to eq("tel:+1-123-456-7890")
+      expect(output).to eq("+%31-%31%32%33-%34%35%36-%37%38%39%30")
     end
   end
 end
